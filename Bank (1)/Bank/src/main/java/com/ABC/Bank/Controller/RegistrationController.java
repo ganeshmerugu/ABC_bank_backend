@@ -22,7 +22,7 @@ public class RegistrationController {
     @PostMapping("/register")
     @CrossOrigin(origins = "http://localhost:4200/signup")
     public ResponseEntity<User> registerUser(@RequestBody User user) {
-// Perform any validation checks on user data if needed
+
 
 // Save the user to the database
         User savedUser = userService.saveUser(user);
@@ -34,7 +34,7 @@ public class RegistrationController {
         }
     }
 
-// Other endpoints for registration-related operations if needed
+
 }
 
 
